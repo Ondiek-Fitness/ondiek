@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCN Fitness Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to Our Fitness Club</h1>
+        <button class="responsive-button" id="join-now">Join Now</button>
+    </section>
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <div class="class-card">
+            <img src="yoga.jpg" alt="Yoga Class">
+            <h3>Flexibility Training: Yoga</h3>
+            <p>Relax and strengthen your body.</p>
+        </div>
+        <div class="class-card">
+            <img src="pilates.jpg" alt="Pilates Class">
+            <h3>Strength Training: Pilates</h3>
+            <p>Improve your flexibility and core strength.</p>
+        </div>
+        <div class="class-card">
+            <img src="hiit.jpg" alt="HIIT Class">
+            <h3>HIIT</h3>
+            <p>High-intensity interval training for maximum burn.</p>
+        </div>
+        <button class="responsive-button" id="view-schedule">View Schedule</button>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="booking">
+        <h2>Book a Class</h2>
+        <form id="booking-form">
+            <label for="class-type">Class Type:</label>
+            <select id="class-type" name="class-type" required>
+                <option value="yoga">Flexibility Trainings</option>
+                <option value="pilates">Strength Trainings</option>
+                <option value="ignite">Cardio Trainings</option>
+                <option value="blaze">Circuit Trainings</option>
+                <option value="hiit">HIIT</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Fitness Club. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
